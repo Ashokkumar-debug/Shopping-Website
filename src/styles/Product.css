@@ -1,0 +1,83 @@
+
+ 
+    .card-container {
+    position: relative;
+    top: 5rem;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+ 
+    }
+
+    .card {
+      width: 300px;
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.11);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+  
+
+    .card h2 {
+        position: relative;
+        top: 4rem;
+      font-size: 22px;
+      margin: 10px 0;
+      color: #fff;
+    }
+
+    .card p {
+        position: relative;
+        left: 0.5rem;
+        
+        color: black;
+        font-size: 16px;/
+    }
+
+    /* Add hover effect for better visuals */
+    .card:hover h2,
+    .card:hover svg
+    {
+      color: black;
+    }
+
+      
+
+      /* In your Product.css */
+.card i {
+    font-size: 3rem; /* Adjust icon size */
+    color: white; /* Adjust color */
+    margin-bottom: 10px; /* Space between icon and text */
+  }
+
+
+ /* Ensure the parent container does not affect the size */
+.shirt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  /* Position the icon absolutely inside the card */
+    top: 20px;  /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%);  /* Center horizontally */
+    width: 100%;  /* Allow full width to center the icon */
+  }
+  
+
+  .shirt svg {
+    font-size: 4rem; /* Increase icon size */
+    transition: font-size 0.3s; /* Smooth transition */
+    color: #fff;
+  }
+

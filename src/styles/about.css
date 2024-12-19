@@ -1,0 +1,191 @@
+
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #F5FFFA; /* Light mint background */
+  color: #333; /* Dark text for contrast */
+  padding: 9px 4px; /* Smaller padding 15px 8px*/
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  height: 180px;
+  flex: 1 1 300px;
+  
+ 
+  /* border-radius: 10px; */
+  /* Darker, more intense shadow */
+  padding: 20px;
+}
+
+
+
+/* .footer-section:hover {
+  transform: scale(1.01); 
+    box-shadow: 0 4px 20px rgba(5, 2, 2, 0.4) 
+  } */
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 6%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0)
+);
+}
+
+
+.footer-section img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  
+}
+
+.footer-section img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+.footer-section {
+  display: flex;
+  overflow-x: hidden; /* Hides overflow content */
+  gap: 200px;
+  padding-bottom: 10px;
+}
+
+.footer-section .inner {
+  display: flex;
+  position: relative;
+  animation: scroll 30s linear infinite;
+  animation-name: loop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+} 
+
+
+.footer-section img {
+  flex-shrink: 0; /* Prevents images from shrinking */
+  width: 150px;
+  height: auto;
+  margin-right: 20px; /* Space between images */
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-13%); /* Moves the images to the left */
+  }
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px; /* Reduced margin */
+  /* border-top: 1px solid #444; */
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.footer-bottom p {
+  position: relative; /* Changed from inherit */
+  left: 0; /* Align to the left */
+  top: 2px; /* Move it slightly up */
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    text-align: center;
+  
+  }
+}
+
+
+.footer-bottom {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px 10px;
+  color: #333;
+  
+}
+
+.footer-bottom h1 {
+  font-size: 2rem;
+  color:black;
+  margin-bottom: 20px;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #555;
+  padding: 20px;
+}
+
+.footer-bottom span {
+  font-weight: bold;
+  color:black;
+}
+
+.footer-bottom h8 {
+  
+ 
+  font-size: 0.9rem;
+  color: #302e2e;
+  margin: 5px 0;
+}
+
+.footer-bottom h8#h8, .footer-bottom h8#h9,.footer-bottom h8#h10 i {
+ padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom h8#h8 i, .footer-bottom h8#h9 i,.footer-bottom h8#h10 i {
+  color:black;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 20px;
+}
+
